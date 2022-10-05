@@ -1,5 +1,5 @@
-baseURL = "https://growinguplate.github.io/"
+baseURL = "https://growinguplate.com/"
 languageCode = 'en-us'
-title = 'Growing Up Late'
+title = 'growing up late'
 theme="archie"
 

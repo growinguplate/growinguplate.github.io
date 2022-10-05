@@ -1,5 +1,5 @@
 ---
-title: "I Once Loved a Boy"
+title: "i once loved a boy"
 date: 2020-06-21T21:21:29-04:00
 draft: false
 ---
