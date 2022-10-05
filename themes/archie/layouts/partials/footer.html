@@ -1,15 +1,3 @@
-<footer>
-  <div style="display:flex">
-    {{- range $index, $key := .Site.Params.Social -}}
-    <a class="soc" href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
-    <a class="border"></a>
-    {{- end -}}
-  </div>
-  <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
-  </div>
-</footer>
 {{ if not .Site.IsServer }}
 {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}
@@ -19,3 +7,13 @@
   feather.replace()
 </script>
 {{- end -}}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GPEL4SG3MG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GPEL4SG3MG');
+</script>
