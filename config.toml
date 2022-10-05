@@ -1,0 +1,5 @@
+baseURL = "https://growinguplate.github.io/"
+languageCode = 'en-us'
+title = 'Growing Up Late'
+theme="archie"
+
