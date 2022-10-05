@@ -1,13 +1,3 @@
-{{ if not .Site.IsServer }}
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
-
-{{- if (isset .Site.Params "social") -}}
-<script>
-  feather.replace()
-</script>
-{{- end -}}
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPEL4SG3MG"></script>
 <script>
