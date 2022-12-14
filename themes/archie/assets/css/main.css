@@ -5,14 +5,18 @@
 --callouctcolor:dodgerblue;
 --hovercolor:#e8a6ff;
 --darkMaincolor: #50fa7b;
+--gray: #aaa;
+--body-font-family: "Helvetica Neue", Helvetica, sans-serif;
+--body-color: #555;
 }
 html {
-  color: #232333;
-  font-family: monospace;
-  font-size: 15px;
+  color: var(--body-color);
+  font-family: var(--body-font-family);
+  font-size: 16px;
   line-height: 1.6em;
 }
 body{
+  background: #f8f8f8;
   display: block;
   margin: 8px;
 }
@@ -26,7 +30,7 @@ body{
 }
 
 p {
-  font-family: monospace;
+  font-family: var(--body-font-family);
   line-height: 1.5;
 }
 
@@ -86,6 +90,9 @@ figure img {
   figure {
     padding: 0 40px;
   }
+  h1.title {
+    margin-left: -15px;
+  }
 }
 
 figure h4 {
@@ -127,16 +134,14 @@ pre code {
   margin-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 640px;
   padding: 0 1ch;
   word-wrap: break-word;
 }
 
 /* Header */
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   margin: 1em 0;
   line-height: 2.5em;
 }
@@ -189,7 +194,8 @@ footer {
 }
 
 time {
-  color: grey;
+  color: var(--gray);
+  font-style: italic;
 }
 
 /* Posts */
@@ -330,4 +336,13 @@ table th{
 table td{
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+}
+
+.subhead {
+  color: var(--gray);
+}
+
+.readmore {
+  margin-top: 0.5rem;
+  display: inline-block;
 }
